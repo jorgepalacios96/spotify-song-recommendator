@@ -1,10 +1,13 @@
 # spotify-song-recommender
+![spotipy logo](https://user-images.githubusercontent.com/79402322/120002527-37cc3080-bfd5-11eb-9bf2-0868e314e2f6.png)
+
+
 In this project, I used the SpotiPy API and clustering to create an algorithm to recommend new songs based on a song query.
 
-In this project, I built a Spotify recommendation engine providing rock and metal songs suggestions based on a song query.
+To perform the recommender, I followed the next steps: 
 
-The project divides in three parts:
+1. First, I used web scraping to get the top 100 song ranking from Billboard. If our initial song appears in this ranking, the recommender would choose another song from this list.
 
-Web scraping from the top100 songs from a website called Billboard. Specifically retrieving the title and artist of those hits. This information will later on be useful as the recommandation engine will advice a user to listen to a random current hit song in the top 100 if the query has been another hit song.
-By using the Spotify API Wrapper, I downloaded a set of 5k rock and metal songs and their audio features (e.g. Danceability, Loudness...). Those audio features are constructed by Spotify.
-I build, trhough the usage of an unsupervised machine learning model, a recommendation engine which will receive an input (a title of any songs currently on Spotify) and will advice either a top 100 song (if the input song was in the top 100 of Billboard), or a rock song similar in terms of audio features of the song the user imputed.
+2. With the Spotify API Wrapper, I downloaded a dataset of 10000 songs from all type of genres so that the algorithm has a wide range of elements to search. Each song has associated some audio features (danceability, valence, energy, liveness, instrumentalness, tempo...) which represent its nature.
+
+3. Through an unsupervised machine learning model, tha algorithm would take our input song and will recommend a another one based on the similarity with the audio features of another song.
