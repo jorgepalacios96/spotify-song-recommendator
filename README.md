@@ -1,5 +1,5 @@
 # spotify-song-recommender
-In this project, I used the SpotiPy API and clustering to create an algorithm to recommend new songs based on the previously chosen.
+In this project, I used the SpotiPy API and clustering to create an algorithm to recommend new songs based on a song query.
 
 In this project, I built a Spotify recommendation engine providing rock and metal songs suggestions based on a song query.
 
