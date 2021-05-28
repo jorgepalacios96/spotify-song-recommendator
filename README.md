@@ -2,7 +2,7 @@
 ![spotipy logo](https://user-images.githubusercontent.com/79402322/120002527-37cc3080-bfd5-11eb-9bf2-0868e314e2f6.png)
 
 
-In this project, I used the SpotiPy API and clustering to create an algorithm to recommend new songs based on a song query.
+In this project, I used clustering and the SpotiPy API to create an algorithm to recommend new songs based on a song query.
 
 To perform the recommender, I followed the next steps: 
 
